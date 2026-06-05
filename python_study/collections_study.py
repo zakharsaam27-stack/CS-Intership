@@ -6,6 +6,11 @@ print(list_example)
 list_example_copy = list_example[:]
 sorted(list_example, key=str.lower) #не меняет оригирнальный лист
 
+list_test2 = [1, 2, 3, 4, 5]
+list_test2_2 = [n**2 for n in list_test2]
+
+#выведет каждое число в квадрате
+
 #set
 set_example = {1, 'example', 2, 'something'}
     #хранение без дупликатов, нахождение общих элементов
