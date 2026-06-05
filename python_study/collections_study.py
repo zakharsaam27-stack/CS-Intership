@@ -62,6 +62,9 @@ expences = [
     ('paint', 150)
 ]
 
-sum = reduce(lambda a, b: a[1] + b[1], expences)
+sum = reduce(lambda a, b: a + b[1], expences, 0)
+
+#принимает функцию и применяет ее к элементам списка по очереди. a = первый элемент,
+#b = второй элемент. третье значение это начальное значение
 
 print(sum)
