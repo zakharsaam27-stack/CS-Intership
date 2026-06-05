@@ -24,3 +24,44 @@ tuple_example = ('pentagon', 'secret', 'coords')
     #неизменяемая информация
 
 #.key .values .append .pop .add 
+
+
+
+#map()
+
+list_test = [5, 10, 20]
+
+def double(n):      ##можно так же с лямбдой
+    return n * 2
+
+doubled_n_list = map(double, list_test) #применяет функцию к списку
+
+print(list(doubled_n_list))
+
+#filter()
+
+list_test = [5, 10, 20]
+
+def isEven(number):
+    return number % 2 == 0
+
+even_check = filter(isEven, list_test) 
+
+#выводит значения из списка которые соответствуют функции, также работает 
+# с лямбдой (фильтрует)
+
+print(list(even_check))
+
+#reduce()
+
+from functools import reduce
+
+expences = [
+    ('car_wash', 120),
+    ('repair', 200),
+    ('paint', 150)
+]
+
+sum = reduce(lambda a, b: a[1] + b[1], expences)
+
+print(sum)
