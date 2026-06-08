@@ -184,6 +184,7 @@ class Game:
                 return True
             elif player_hand.is_blackjack():
                 print("You have backjack. You win")
+                return True
             elif dealer_hand.is_blackjack():
                 print("Dealer has backjack. Dealer wins")
                 return True
