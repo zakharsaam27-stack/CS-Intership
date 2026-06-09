@@ -43,3 +43,9 @@ favoriteFood = null;
 
 
 const unique = Symbol();
+
+let name1 = "Steven";
+let name2 = "Garcia";
+
+let fullName = `${name1} ${name2}`;
+// как f строка в питоне 

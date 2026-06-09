@@ -41,3 +41,26 @@ for (let element of numbers) {
 // for (let idx = 0; idx < numbers.length; idx++) {
 //     console.log(numbers[idx])
 // }
+
+numbers.forEach((number) => {
+    console.log(number);
+});
+// same
+
+const dog = {
+    name: "zarbazan",
+    age: 5,
+    color: "white"
+};
+// for ( const key in dog ) {
+//     console.log(dog[key]);
+// }
+
+const keys = Object.keys(dog);
+// console.log(keys);
+
+const values = Object.values(dog);
+// console.log(values);
+
+const entries = Object.entries(dog);
+console.log(entries)
